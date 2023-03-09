@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker</title>
+    <link href = "Styles/index_style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>Welcome to Cookie Clicker</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="midScreen">
+        <div class="infoDivNotShowing">
+            <button class="infoButton">≡</button>
+            <div class="infoText">
+                <b><u id="achievementsTitle">Achievements</u></b>
+                <p class="cookiesClickedText"></p>
+                <p class="helpersBought">
+                    Helpers Bought:
+                    <ul>
+                        <li id="helper1Bought" class="helperBoughtList"></li>
+                        <li id="helper2Bought" class="helperBoughtList"></li>
+                        <li id="helper3Bought" class="helperBoughtList"></li>
+                        <li id="helper4Bought" class="helperBoughtList"></li>
+                        <li id="helper5Bought" class="helperBoughtList"></li>
+                        <li id="helper6Bought" class="helperBoughtList"></li>
+                        <li id="helper7Bought" class="helperBoughtList"></li>
+                        <li id="helper8Bought" class="helperBoughtList"></li>
+                        <li id="helper9Bought" class="helperBoughtList"></li>
+                        <li id="helper10Bought" class="helperBoughtList"></li>
+                    </ul>
+                </p>
+                <p class="gambleWinCount"></p>
+                <p class="gambleWinnings"></p>
+                <p class="gambleLoseCount"></p>
+                <p class="gambleLosses"></p>
+            </div>
+        </div>
+        <div class="upgradeContainer">
+            <p class="upgradeRequirmentText">Price for next upgrade: 100 cookies</p>
+            <button class = "upgradeButton"></button>
+            <br>
+            <br>
+        </div>
+        <div id = "cookieContainer">
+            <button class="cookie"> </button>
+        </div>
+        <audio src="Audio/CoinSound.mp3"></audio>
+        <p class="cookieText">Current Cookies: 0</p>
+        <p class="automaticText">(0/sec)</p>
+    </div>
+    <div class="buttonContainer">
+        <button class="hideHelperMenu">Hide menu ↓</button>
+        <button class="gambleButton">Gamble</button>
+    </div>
+    <div class="helperMenuWrapper">
+        <div class = "helperMenu">
+            <!-- Helper 1 -->
+            <div id = "helper1" class="helperParent opaque">
+                <img class="helperImage" id = "helperImage1" src="Images/Grandma.webp">
+                <p class="helperText" id="helperText1">Grandma(0.5/sec)</p>
+                <button class="helperButton" id="helperButton1"></button>
+            </div>
+            <!-- Helper 2 -->
+            <div id = "helper2" class="helperParent opaque">
+                <img class="helperImage" id = "helperImage2" src="Images/Bakery.jpeg">
+                <p class="helperText" id="helperText2">Bakery(1/sec)</p>
+                <button class="helperButton" id="helperButton2"></button>
+            </div>
+            <!-- Helper 3 -->
+            <div id = "helper3" class="helperParent opaque">
+                <img class="helperImage" id = "helperImage3" src="Images/Farm.jpeg">
+                <p class="helperText" id="helperText3">Farm(2/sec)</p>
+                <button class="helperButton" id="helperButton3"></button>
+            </div>
+            <!-- Helper 4 -->
+            <div id = "helper4" class="helperParent opaque">
+                <img class="helperImage" id = "helperImage4" src="Images/Factory.webp">
+                <p class="helperText" id="helperText4">Factory(5/sec)</p>
+                <button class="helperButton" id="helperButton4"></button>
+            </div>
+            <!-- Helper 5 -->
+            <div id = "helper5" class="helperParent opaque">
+                <img class="helperImage" id = "helperImage5" src="Images/Company.jpeg">
+                <p class="helperText" id="helperText5">Company(10/sec)</p>
+                <button class="helperButton" id="helperButton5"></button>
+            </div>
+            <!-- Helper 6 -->
+            <div id = "helper6" class="helperParent opaque">
+                <img class="helperImage" id = "helperImage6" src="Images/Cookie_king.jpeg">
+                <p class="helperText" id="helperText6">King(20/sec)</p>
+                <button class="helperButton" id="helperButton6"></button>
+            </div>
+            <!-- Helper 7 -->
+            <div id = "helper7" class="helperParent opaque">
+                <img class="helperImage" id = "helperImage7" src="Images/Empire.jpeg">
+                <p class="helperText" id="helperText7">Empire(50/sec)</p>
+                <button class="helperButton" id="helperButton7"></button>
+            </div>
+            <!-- Helper 8 -->
+            <div id = "helper8" class="helperParent opaque">
+                <img class="helperImage" id = "helperImage8" src="Images/Dynasty.jpeg">
+                <p class="helperText" id="helperText8">Dynasty(100/sec)</p>
+                <button class="helperButton" id="helperButton8"></button>
+            </div>
+            <!-- Helper 9 -->
+            <div id = "helper9" class="helperParent opaque">
+                <img class="helperImage" id = "helperImage9" src="Images/Planet.png">
+                <p class="helperText" id="helperText9">Planet(500/sec)</p>
+                <button class="helperButton" id="helperButton9"></button>
+            </div>
+            <!-- Helper 10 -->
+            <div id = "helper10" class="helperParent opaque">
+                <img class="helperImage" id = "helperImage10" src="Images/Universe.png">
+                <p class="helperText" id="helperText10">Universe(1000/sec)</p>
+                <button class="helperButton" id="helperButton10"></button>
+            </div>
+        </div>
+    </div>
+    <audio loop id="backgroundMusic">
+        <source src="Audio/MrBeat&ZeviColab3.mp3" type="audio/mp3">
+    </audio>
+    <script src="Script/index_script.js"></script>
+</body>
+</html>

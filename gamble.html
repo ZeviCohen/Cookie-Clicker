@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Styles/gamble_style.css" rel="stylesheet" type="text/css">
+    <title>Gamble</title>
+</head>
+<body>
+    <a href="index.html">Home Page</a>
+    <button class="infoButton">How to Play</button>
+    <h1>Go waste your cookies!!! MWAH HAH HAAAH!!!</h1>
+    <div class="numbersContainer">
+        <div class="numberDiv" id="numberDiv1"></div>
+        <div class="numberDiv" id="numberDiv2"></div>
+        <div class="numberDiv" id="numberDiv3"></div>
+    </div>
+    <div class="textContainer">
+        <p class="greenWinLoseText"></p>
+        <p class="gambleText">Enter the amount you wish to gamble down below:</p>
+        <p class="currentCookieCount">Current Cookies:nan</p>
+    </div>
+    <div class="Container">
+        <input type="text" class="gambleInput"></input>
+        <button class="upButton">⌃</button>
+        <button class="downButton">⌵</button>
+        <br>
+        <button class="gambleButton"></button>
+    </div>
+    <audio src="Audio/slot_payoff.wav" id="gambleSound"></audio>
+    <audio src="Audio/yay-6326.mp3" id="jackpotSound"></audio>
+    <p class="jackpotText"></p>
+    <audio loop id="backgroundMusic">
+        <source src="Audio/MrBeat & Zevi Colab.mp3" type="audio/mp3">
+    </audio>
+    <script src="Script/gamble_script.js"></script>
+</body>
+</html>

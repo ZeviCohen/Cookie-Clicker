@@ -1,0 +1,226 @@
+/* Eveything on this page is in the same order as the elements 
+on the corresponding html page */
+
+
+
+html{
+    background-color:rgb(63, 231, 231);
+}
+
+h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    color:rgb(4, 0, 255);
+}
+
+
+
+
+
+/* New section */
+.infoDivNotShowing{
+    position: relative;
+    width: 0;
+    height: 400px;
+    float:left;
+    top:5px;
+}
+
+.infoDiv{
+    position: relative;
+    width: 300px;
+    height: 480px;
+    background-color: white;
+    float:left;
+    top:5px;
+}
+
+.infoButton{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 445px;
+    left: 5px;
+    font-size: 35px;
+    background-color: transparent;
+    border-color: transparent;
+    z-index: 5;
+    padding-left: 0;
+    border-left: 0;
+    left:-5px;
+}
+
+.infoText{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    height: 425px;
+    width: 275px;
+    font-size: 16px;
+    overflow-y: scroll;
+}
+
+#achievementsTitle{
+    font-size: 18px;
+}
+
+.helperBoughtList{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+/* New section */
+.upgradeContainer{
+    position: relative;
+    text-align:center;
+    width:923px;
+    left:250px;
+    height: 50px;
+}
+
+.upgradeRequirmentText{
+    font-size: 18px;
+    margin:0;
+}
+
+.upgradeButton{
+    position: absolute;
+    left:46%;
+    height: 30px;
+    width: 80px;
+    background-color: white;
+    border: black solid 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+/* New section */
+#cookieContainer{
+    position: relative;
+    text-align: center;
+    width:923px;
+    left:250px;
+}
+
+.cookie{
+    background-image: url("/Users/zcohen/Downloads/Comp Sci/Web_Dev/Javascript/Cookie Clicker/Images/Cookie.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: black 2px solid;
+    transition: all .05s ease;
+}
+
+.cookie:hover{
+    transform: scale(1.05);
+}
+
+.cookie:active, .upgradeButton:active{
+    border:gold 2px solid;
+}
+
+.cookieText{
+    position: relative;
+    text-align: center;
+    width:923px;
+    left:250px;
+}
+
+.automaticText{
+    position: relative;
+    text-align: center;
+    width:923px;
+    left:250px;
+    font-size: 16px;
+}
+
+
+
+
+
+/* New section */
+.buttonContainer{
+    position: relative;
+    height: 121px;
+}
+
+.hideHelperMenu{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    width: 100px;
+}
+
+.gambleButton{
+    position: absolute;
+    bottom:0;
+    left:100px;
+    height: 20px;
+    width: 90px;
+}
+
+
+
+
+
+/* New section */
+.helperMenuWrapper{
+    height:151px;
+    width:100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-color: rgb(14, 255, 243);
+    scrollbar-width: thin;
+}
+
+.helperMenu{
+    margin-bottom:10px;
+    left: 15px;
+    height: 151px;
+    width: 137%;
+}
+
+.helperParent{
+    width:165px;
+    height: 125px;
+    border:black solid 3px;
+    padding: 10px;
+    text-align: center;
+    display:inline-block;
+}
+
+.helperImage{
+    height: 85px;
+    width: 85px;
+    opacity: 0.5;
+}
+
+.helperText{
+    margin:0;
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+.helperButton{
+    margin-top: 5px;
+    height: 20px;
+    width: 115px;
+}
+
+.opaque{
+    background-color: rgba(108, 103, 103, 0.35);
+}
+
+.clear{
+    background-color:rgba(236, 241, 230, 0.7)
+}
